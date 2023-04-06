@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@450&family=Poly&display=swap');
+body {
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+margin: 0;
+padding: 0;
+}
+
+header {
+    background-color: #81c784;
+    padding: 5px;
+    top: 0;
+    text-align: right;
+ }
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    padding: 0 10px;
+}
+
+/* title */
+.title {
+    text-align: center;
+}
+
+/* subtitle */
+.subtitle {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* paragraf */
+p {
+    text-align: left;
+}
+
+/* h2 */
+h2 {
+    background-color: #81c784;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+/* gambar */
+img {
+    height: 120px;
+}
+
+/* header */
+.menu {
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color: #81c784;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* tombol ke segitiga/jajar genjang */
+.menu>a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+/* card */
+.card {
+    border: 2px #81c784 solid;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* form input */
+form>input {
+    padding: 8px 4px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* form label */
+form>label {
+    float: left;
+    display: block;
+}
+
+/* tombol hitung */
+.button-hitung {
+    padding: 6px 8px;
+    background-color: #81c784;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* tombol reset */
+.button-reset {
+    padding: 6px 8px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    float: right;
+    /* display: block; */
+}
+
+/* bagi 2 layar segitiga dan jajar genjang */
+.calculate {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* tampilan segitiga */
+.calculate-triangle {
+    padding: 10px;
+    flex: 50%;
+}
+
+/* tampilan jajar genjang */
+.calculate-parallelogram {
+    padding: 10px;
+    flex: 50%;
+}
+footer {
+    padding: 15px;
+    color: white;
+    background-color: #81c784;
+    text-align: center;
+    font-weight: bold;
+ }
+/* tampilan handphone */
+@media (max-width: 800px) {
+    .calculate {
+        flex-direction: column;
+    }
+}
